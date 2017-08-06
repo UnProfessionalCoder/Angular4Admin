@@ -1,0 +1,25 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="text-center m-t-lg">
+                <h1>
+                    Welcome in Inspinia Angular 2 Starter Project
+                </h1>
+                <small>
+                    It is an application skeleton for a typical web app. You can use it to quickly bootstrap your webapp projects and dev environment.
+                </small>
+            </div>
+          <!--<div id="chart1" [appOptions]="options" style="width: 900px;height:500px;"></div>-->
+          <!--<div id="chart2" [appOptions]="optionData" style="width: 900px;height:500px;"></div>-->
+          <!--<div id="chart3" [appOptions]="optionDt1" style="width: 900px;height:500px;"></div>-->
+          <!--<div id="chart3" [appOptions]="optionDt2" style="width: 900px;height:500px;"></div>-->
+        <div>
+          <ul>
+            <li *ngFor="let item of collection | paginate: { itemsPerPage: 5, currentPage: p }"> {{item}} </li>
+          </ul>
+
+          <app-pagination-controls (pageChange)="p = $event"></app-pagination-controls>
+        </div>
+        </div>
+    </div>
+</div>
