@@ -5,7 +5,7 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: 'main2-view.template.html'
 })
 export class Main2ViewComponent implements OnInit {
-  
+
   dataBJ: any = [
     [1, 55, 9, 56, 0.46, 18, 6, '良'],
     [2, 25, 11, 21, 0.65, 34, 9, '优'],
