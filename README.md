@@ -27,4 +27,19 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-http://jasonwatmore.com/post/2016/08/23/angular-2-pagination-example-with-logic-like-google
+Note:
+如果使用cnpm 需要更改.angular-cli.json中的
+```
+"styles": [
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/font-awesome/css/font-awesome.min.css",
+        "assets/styles/styles.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/metismenu/dist/metisMenu.js",
+        "../src/vendor/pace/pace.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js"
+      ],
+```
