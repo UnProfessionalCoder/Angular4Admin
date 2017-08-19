@@ -8,11 +8,6 @@
             </div>
           <div id="chart2" [appOptions]="optionData" style="width: 900px;height:500px;"></div>
         <div>
-          <ul>
-            <li *ngFor="let item of collection | paginate: { itemsPerPage: 5, currentPage: p }"> {{item}} </li>
-          </ul>
-
-          <app-pagination-controls (pageChange)="p = $event"></app-pagination-controls>
         </div>
         </div>
     </div>

@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {SharedModule} from './shared/shared.module';
 import {AuthModule} from './auth/auth.module';
-import {CoreModule} from './core/core.module';
 import {ViewsModule} from './views/views.module';
 import {CommonsModule} from './components/common/commons.module';
 
@@ -21,7 +20,6 @@ import {CommonsModule} from './components/common/commons.module';
     AppRoutingModule,
     SharedModule,
     AuthModule,
-    CoreModule,
     CommonsModule,
     ViewsModule
   ],

@@ -15,10 +15,14 @@ const authRoutes: Routes = [
     path: '', component: BasicComponent,
     children: [
       {path: 'mainView', component: MainViewComponent},
+      {path: 'mainView0', component: MinorViewComponent},
       {path: 'mainView1', component: Main1ViewComponent},
       {path: 'mainView2', component: Main2ViewComponent},
       {path: 'mainView3', component: Main3ViewComponent},
-      {path: 'minorView', component: MinorViewComponent}
+      {path: 'mainView4', component: MinorViewComponent},
+      {path: 'mainView5', component: Main1ViewComponent},
+      {path: 'mainView6', component: Main2ViewComponent},
+      {path: 'mainView7', component: Main3ViewComponent}
     ]
   },
   {

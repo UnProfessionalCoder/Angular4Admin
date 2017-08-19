@@ -1,51 +1,64 @@
 <nav class="navbar-default navbar-static-side" role="navigation">
-    <div class="sidebar-collapse">
-        <ul class="nav metismenu" id="side-menu">
-            <li class="nav-header">
-                <div class="dropdown profile-element">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <span class="block m-t-xs"> <strong class="font-bold">Example user</strong> </span>
-                        <span class="text-muted text-xs block">Example <b class="caret"></b> </span>
-                    </a>
-                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                        <li><a href="#">Logout</a></li>
-                    </ul>
-                </div>
-                <div class="logo-element">
-                    IN+
-                </div>
-            </li>
-            <li [ngClass]="{active: activeRoute('mainView')}">
-                <a [routerLink]="['/mainView']"><i class="fa fa-th-large"></i> <span class="nav-label">Main view</span></a>
-            </li>
-            <li [ngClass]="{active: activeRoute('minorView')}">
-              <!--<ul class="nav metismenu" id="sec-menu">-->
-                <!--<li [ngClass]="{active: activeRoute('minorView')}">-->
-                  <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">Minor view</span> </a>
-              <ul class="nav nav-second-level collapse">
-                <li [ngClass]="{active: activeRoute('minorView')}">
-                  <a routerLinkActive="active" [routerLink]="['/minorView']"><i class="fa fa-diamond"></i> Minor-aaa</a>
-                </li>
-                <li [ngClass]="{active: activeRoute('mainView1')}">
-                  <a routerLinkActive="active" [routerLink]="['/mainView1']"><i class="fa fa-envelope"></i> mainView1-bbb</a>
-                </li>
-                <li [ngClass]="{active: activeRoute('mainView2')}">
-                  <a routerLinkActive="active" [routerLink]="['/mainView2']"><i class="fa fa-pie-chart"></i> mainView2-ccc</a>
-                </li>
-                <li [ngClass]="{active: activeRoute('mainView3')}">
-                  <a routerLinkActive="active" [routerLink]="['/mainView3']"><i class="fa fa-shield"></i> mainView3-dd</a>
-                </li>
-              </ul>
-                <!--</li>-->
-              <!--</ul>-->
-            </li>
-            <li>
-                <a [routerLink]="['/login']"><i class="fa fa-sign-in"></i> <span class="nav-label">Login</span> </a>
-            </li>
-            <li>
-                <a [routerLink]="['/register']"><i class="fa fa-pencil"></i> <span class="nav-label">Register</span> </a>
-            </li>
+  <div class="sidebar-collapse">
+    <ul class="nav metismenu" id="side-menu">
+      <li class="nav-header">
+        <div class="dropdown profile-element">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <span class="block m-t-xs"> <strong class="font-bold">NewBigTech</strong> </span>
+            <span class="text-muted text-xs block">NBT <b class="caret"></b> </span>
+          </a>
+          <ul class="dropdown-menu animated fadeInRight m-t-xs">
+            <li><a href="#">退出</a></li>
+          </ul>
+        </div>
+        <div class="logo-element">
+          NBT
+        </div>
+      </li>
+      <li [ngClass]="{active: activeRoute('mainView')}">
+        <a routerLinkActive="active" [routerLink]="['/mainView']"><i class="fa fa-th-large"></i> <span class="nav-label">首页</span></a>
+      </li>
+      <li [ngClass]="{active: activeRoute('minorView')}">
+        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">Echart</span> </a>
+        <ul class="nav nav-second-level collapse">
+          <li [ngClass]="{active: activeRoute('mainView0')}">
+            <a routerLinkActive="active" [routerLink]="['/mainView0']"><i class="fa fa-diamond"></i> 漏斗图</a>
+          </li>
+          <li [ngClass]="{active: activeRoute('mainView1')}">
+            <a routerLinkActive="active" [routerLink]="['/mainView1']"><i class="fa fa-envelope"></i> 直方图</a>
+          </li>
+          <li [ngClass]="{active: activeRoute('mainView2')}">
+            <a routerLinkActive="active" [routerLink]="['/mainView2']"><i class="fa fa-pie-chart"></i> 分页</a>
+          </li>
+          <li [ngClass]="{active: activeRoute('mainView3')}">
+            <a routerLinkActive="active" [routerLink]="['/mainView3']"><i class="fa fa-shield"></i> 中国地图</a>
+          </li>
         </ul>
+      </li>
+      <li [ngClass]="{active: activeRoute('minorView')}">
+        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">Echart1</span> </a>
+        <ul class="nav nav-second-level collapse">
+          <li [ngClass]="{active: activeRoute('mainView4')}">
+            <a routerLinkActive="active" [routerLink]="['/mainView4']"><i class="fa fa-diamond"></i> 漏斗图</a>
+          </li>
+          <li [ngClass]="{active: activeRoute('mainView5')}">
+            <a routerLinkActive="active" [routerLink]="['/mainView5']"><i class="fa fa-envelope"></i> 直方图</a>
+          </li>
+          <li [ngClass]="{active: activeRoute('mainView6')}">
+            <a routerLinkActive="active" [routerLink]="['/mainView6']"><i class="fa fa-pie-chart"></i> 分页</a>
+          </li>
+          <li [ngClass]="{active: activeRoute('mainView7')}">
+            <a routerLinkActive="active" [routerLink]="['/mainView7']"><i class="fa fa-shield"></i> 中国地图</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a [routerLink]="['/login']"><i class="fa fa-sign-in"></i> <span class="nav-label">登录</span> </a>
+      </li>
+      <li>
+        <a [routerLink]="['/register']"><i class="fa fa-pencil"></i> <span class="nav-label">注册</span> </a>
+      </li>
+    </ul>
 
-    </div>
+  </div>
 </nav>
