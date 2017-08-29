@@ -16,23 +16,25 @@
           NBT
         </div>
       </li>
-      <li [ngClass]="{active: activeRoute('mainView')}">
-        <a routerLinkActive="active" [routerLink]="['/mainView']"><i class="fa fa-th-large"></i> <span class="nav-label">首页</span></a>
+      <li class="nav">
+        <a routerLinkActive="active" [routerLink]="['/main/mainView']"><i class="fa fa-th-large"></i> <span class="nav-label">首页</span></a>
+        <ul class="nav nav-second-level collapse">
+        </ul>
       </li>
-      <li [ngClass]="{active: activeRoute('minorView')}">
+      <li>
         <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">Echart</span> </a>
         <ul class="nav nav-second-level collapse">
-          <li [ngClass]="{active: activeRoute('mainView0')}">
-            <a routerLinkActive="active" [routerLink]="['/mainView0']"><i class="fa fa-diamond"></i> 漏斗图</a>
+          <li [ngClass]="{active: activeRoute('/main/mainView0')}">
+            <a routerLinkActive="active" [routerLink]="['/main/mainView0']"><i class="fa fa-diamond"></i> 漏斗图</a>
           </li>
-          <li [ngClass]="{active: activeRoute('mainView1')}">
-            <a routerLinkActive="active" [routerLink]="['/mainView1']"><i class="fa fa-envelope"></i> 直方图</a>
+          <li [ngClass]="{active: activeRoute('/main/mainView1')}">
+            <a routerLinkActive="active" [routerLink]="['/main/mainView1']"><i class="fa fa-envelope"></i> 直方图</a>
           </li>
-          <li [ngClass]="{active: activeRoute('mainView2')}">
-            <a routerLinkActive="active" [routerLink]="['/mainView2']"><i class="fa fa-pie-chart"></i> 分页</a>
+          <li [ngClass]="{active: activeRoute('/main/mainView2')}">
+            <a routerLinkActive="active" [routerLink]="['/main/mainView2']"><i class="fa fa-pie-chart"></i> 分页</a>
           </li>
-          <li [ngClass]="{active: activeRoute('mainView3')}">
-            <a routerLinkActive="active" [routerLink]="['/mainView3']"><i class="fa fa-shield"></i> 中国地图</a>
+          <li [ngClass]="{active: activeRoute('/main/mainView3')}">
+            <a routerLinkActive="active" [routerLink]="['/main/mainView3']"><i class="fa fa-shield"></i> 中国地图</a>
           </li>
         </ul>
       </li>

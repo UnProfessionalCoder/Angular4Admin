@@ -12,7 +12,7 @@ import {Main3ViewComponent} from "./main3-view/main3-view.component";
 
 const authRoutes: Routes = [
   {
-    path: '', component: BasicComponent,
+    path: 'main', component: BasicComponent,
     children: [
       {path: 'mainView', component: MainViewComponent},
       {path: 'mainView0', component: MinorViewComponent},
@@ -22,11 +22,12 @@ const authRoutes: Routes = [
       {path: 'mainView4', component: MinorViewComponent},
       {path: 'mainView5', component: Main1ViewComponent},
       {path: 'mainView6', component: Main2ViewComponent},
-      {path: 'mainView7', component: Main3ViewComponent}
+      {path: 'mainView7', component: Main3ViewComponent},
+      {path: '', component: Main3ViewComponent}
     ]
   },
   {
-    path: '', component: BlankComponent,
+    path: 'api', component: BlankComponent,
     children: [
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent }
@@ -34,7 +35,7 @@ const authRoutes: Routes = [
   },
 
   // Handle all other routes
-  {path: '**',    component: MainViewComponent }
+  {path: '**',    component: BlankComponent }
 ];
 
 @NgModule({
